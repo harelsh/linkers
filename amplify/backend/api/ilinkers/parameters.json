@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "ilinkers",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authilinkerse20eb6cd",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
